@@ -12,3 +12,9 @@ Circular linkedlist was also built using the framework of the singly linkedlist.
 The methods included in this were insert_node, add_first, return_last_node and delete_node.
 Traversing the linkedlist in this instance needed to be amended because there will never be a None value in the last node to indicate the end of a list.
 Deleting a node needed to be adjusted and edge cases considered for each type of linkedlist with doubly_linkedlist being the simplest implementation and Circular_LinkedList being the most difficult
+
+Stacks & Queues:
+
+Both stacks and queues were built using python lists and linkedlists with minor changes and accommodations made to replicate the behaviour of the respective data structure.
+Python lists were used instead of numpy arrays because numpy arrays did not provide the functionality required for a stack or queue.
+The implementation of each was relatively simple where a lot of the work was being done by the array or linkedlist which was developed previously. 
