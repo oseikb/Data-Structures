@@ -94,6 +94,27 @@ class Tree:
             else:
                 parent.right = successor
 
+    def preorder(self, node):
+        curr = node
+        if curr is not None:
+            print(curr.data)
+            self.preorder(curr.left)
+            self.preorder(curr.right)
+
+    def postorder(self, node):
+        curr = node
+        if curr is not None:
+            self.preorder(curr.left)
+            self.preorder(curr.right)
+            print(curr.data)
+
+    def inorder(self, node):
+        curr = node
+        if curr is not None:
+            self.preorder(curr.left)
+            print(curr.data)
+            self.preorder(curr.right)
+
 
 if __name__ == "__main__":
     my_bst = Tree()
@@ -107,14 +128,19 @@ if __name__ == "__main__":
     my_bst.insert(4)
     my_bst.insert(2)
     my_bst.insert(1)
+    my_bst.preorder(my_bst.root)
+    print("\n")
+    my_bst.postorder(my_bst.root)
+    print("\n")
+    my_bst.inorder(my_bst.root)
     # print(my_bst.find(190))
     # print(my_bst.find(5))
     # print(my_bst.find(2))
     # print(my_bst.find_parent(1))
     # print(my_bst.find(2).data)
-    my_bst.delete(10)
+    # my_bst.delete(10)
     # print(my_bst.find(6).right)
-    print(my_bst.find(10))
+    # print(my_bst.find(10))
     # print(my_bst.find(3), my_bst.find(5), my_bst.find(8))
     # print(my_bst.find(2), my_bst.find(3), my_bst.find(4))
     # print(my_bst.find(1), my_bst.find(2))

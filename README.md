@@ -18,3 +18,10 @@ Stacks & Queues:
 Both stacks and queues were built using python lists and linkedlists with minor changes and accommodations made to replicate the behaviour of the respective data structure.
 Python lists were used instead of numpy arrays because numpy arrays did not provide the functionality required for a stack or queue.
 The implementation of each was relatively simple where a lot of the work was being done by the array or linkedlist which was developed previously. 
+
+Binary Search Trees:
+
+Implemented Insert, Find, Delete, Find_Parent, Get_Successor methods. Find_parent and get_successor methods were particularly relevant in the delete function.
+The delete function had to take into consideration 3 core deletion use cases; leaf node, node has 1 child node and node has 2 child nodes.
+Another consideration is if the node to be deleted is the root node. It will be similar to the node with 2 children but it will have no parent.
+Implemented recursive traversals; in-order, post-order, pre-order
